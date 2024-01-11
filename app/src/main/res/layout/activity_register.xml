@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/marcellus"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textColor="#B7202E"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/signUpemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:textColorHint="@color/coolgrey"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#58595B"
+        android:drawableLeft="@drawable/baseline_user"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/fira_sans_medium"
+        android:hint="EMAIL ID / USER NAME"
+        android:inputType="textEmailAddress"
+        android:padding="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUppassword"
+        android:layout_below="@+id/signUpemail"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#58595B"
+        android:hint="Password"
+        android:textColorHint="@color/coolgrey"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/fira_sans_medium"
+        android:drawableLeft="@drawable/baseline_password"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUppassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#58595B"
+        android:drawableLeft="@drawable/baseline_cnf_pass"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/fira_sans_medium"
+        android:hint="Confirm Password"
+        android:inputType="numberPassword"
+        android:padding="20dp"
+        android:textColorHint="@color/coolgrey" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:layout_below="@+id/confirm_password"
+        android:layout_centerHorizontal="true"
+        android:text="signup"
+        android:backgroundTint="#B7202E"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already an User? LOGIN"
+        android:textSize="20sp"
+        android:fontFamily="@font/fira_sans_medium"
+        android:textColor="#B7202E"
+        android:layout_below="@+id/signup"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginRedirectText">
+
+    </TextView>
+
+
+
+</RelativeLayout>

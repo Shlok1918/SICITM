@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/marcellus"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="#B7202E"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#58595B"
+        android:drawableLeft="@drawable/baseline_user"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/fira_sans_medium"
+        android:hint="EMAIL ID / USER NAME"
+        android:textColorHint="@color/coolgrey"
+        android:inputType="textEmailAddress"
+        android:padding="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_password"
+        android:textColorHint="@color/coolgrey"
+        android:layout_below="@+id/login_email"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#58595B"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/fira_sans_medium"
+        android:drawableLeft="@drawable/baseline_password"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:text="login"
+        android:backgroundTint="#B7202E"
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_medium"
+        android:text="Forgot Password?"
+        android:textColor="@color/purple_500" />
+
+    <com.developer.gbuttons.GoogleSignInButton
+        android:id="@+id/googleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotpassword"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="152dp"
+        android:padding="8dp"
+        android:text="Sign in with Google"
+        app:isDarkTheme="true" />
+
+    <TextView
+        android:id="@+id/SignUpRedirectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/fira_sans_medium"
+        android:text="Not yet Registered? SIGN UP"
+        android:textColor="#B7202E"
+        android:textSize="20sp">
+
+    </TextView>
+
+</RelativeLayout>
